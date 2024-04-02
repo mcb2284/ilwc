@@ -441,21 +441,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4271d37baee1b8c7e4b708028c57d816cf9d2434acb33a549475f78c181f6253"
 
 [[package]]
-name = "grrs"
-version = "0.1.0"
-dependencies = [
- "ansi_term",
- "anyhow",
- "clap",
- "env_logger",
- "indicatif",
- "log",
- "serde",
- "socketioxide",
- "tokio",
-]
-
-[[package]]
 name = "h2"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -588,6 +573,21 @@ checksum = "634d9b1461af396cad843f47fdba5597a4f9e6ddd4bfb6ff5d85028c25cb12f6"
 dependencies = [
  "unicode-bidi",
  "unicode-normalization",
+]
+
+[[package]]
+name = "ilwc"
+version = "0.1.0"
+dependencies = [
+ "ansi_term",
+ "anyhow",
+ "clap",
+ "env_logger",
+ "indicatif",
+ "log",
+ "serde",
+ "socketioxide",
+ "tokio",
 ]
 
 [[package]]
