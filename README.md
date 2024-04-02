@@ -1,5 +1,10 @@
 # Internet Long Wave Chat
 
+![GitHub all releases](https://img.shields.io/github/downloads/mcb2284/ilwc/total?color=green)
+![GitHub language count](https://img.shields.io/github/languages/count/mcb2284/ilwc)
+![GitHub top language](https://img.shields.io/github/languages/top/mcb2284/ilwc)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/mcb2284/ilwc)
+
 Welcome to Internet Long Wave Chat, an innovative command-line interface (CLI) chat application built with Rust. Leveraging the power of asynchronous programming, our app offers real-time communication across the internet with minimal latency. Designed for developers and tech enthusiasts, Internet Long Wave Chat combines a robust architecture with an intuitive user experience, making digital conversations more seamless than ever.
 
 ## Key Features
