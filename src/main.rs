@@ -1,16 +1,14 @@
 use ansi_term::Color::{Cyan, Green, Red, Yellow};
-use anyhow::{Context, Result};
-use clap::Parser;
+use anyhow::Result;
+//use clap::Parser;
 use log::{info, warn};
+mod server;
 
-#[derive(Parser)]
-struct Cli {
-    pattern: String,
-    path: std::path::PathBuf,
-}
-
-fn main() -> Result<()> {
+#[tokio::main]
+async fn main() -> Result<()> {
     banner();
+
+    server::server().await;
 
     // Progress Bar
     // let pb = indicatif::ProgressBar::new(100);
@@ -23,16 +21,6 @@ fn main() -> Result<()> {
     env_logger::init();
     info!("this is info");
     warn!("this is warn");
-
-    let args = Cli::parse();
-    let result = std::fs::read_to_string("test/test.txt")
-        .with_context(|| format!("could not read file with path {}", &args.path.display()))?;
-
-    for line in result.lines() {
-        if line == &args.pattern {
-            println!("{}", line);
-        }
-    }
 
     Ok(())
 }
