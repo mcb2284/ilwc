@@ -1,4 +1,4 @@
-
+````
           _____                    _____            _____                    _____          
          /\    \                  /\    \          /\    \                  /\    \         
         /::\    \                /::\____\        /::\____\                /::\    \        
@@ -21,7 +21,7 @@
         \::/    /                \::/    /        \::/____/                \::/    /        
          \/____/                  \/____/          ~~                       \/____/         
                                                                                             
-
+````
 # Internet Long Wave Chat
 
 ![GitHub all releases](https://img.shields.io/github/downloads/mcb2284/ilwc/total?color=green)
